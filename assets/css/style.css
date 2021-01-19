@@ -1,17 +1,12 @@
-/**
-* Template Name: Kelly - v2.0.0
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
-  /* background:url('../img/Musana\ pattern_edited.jpg') no-repeat left; */
+  color: #0a0a0a;
+  background-color: rgba(88, 88, 88, 0.596);
 }
 
 a {
@@ -38,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container{
-  padding-left: 100px !important;
+  padding-left: 50 !important;
   padding-right: 0 !important;
   padding-top: 0;
   padding-bottom: 0;
@@ -53,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   left:35%;
   top: 600px;
   overflow: hidden;
+  mix-blend-mode: multiply;
 }
 
 #watermark .watermark-logo-other{
@@ -64,43 +60,44 @@ h1, h2, h3, h4, h5, h6 {
   left:35%;
   top: 100px;
   overflow: hidden;
+  mix-blend-mode: multiply;
 }
 
 #side-pic img{
   position: fixed;
   height: 100vh;
-  width: 100px;
+  
   z-index: -10;
   padding:0;
   margin: 0;
   overflow: hidden;
-  transform: translateX(50px);
+  transform: translateX(25px);
 }
 
 #side-pic-home img{
   position: absolute;
   height: 80vh;
-  width: 100px;
   z-index: -10;
   padding:0;
   margin: 0;
   overflow: hidden;
-  transform: translateX(50px);
+  transform: translateX(25px);
 }
 
 @media(max-width:748px){
   #watermark .watermark-logo{
     width: 200px;
+    top: 800px;
   }
   #watermark .watermark-logo-other{
     width: 200px;
   }
   #side-pic img{
-    transform: translateX(0px);
+    transform: translateX(-25px);   
   }
   #side-pic-home img{
-    transform: translateX(0px);
-    height: 125vh;
+    transform: translateX(-25px);
+    height: 100vh;    
   }
 
 }
@@ -543,14 +540,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #ffffff;
-  transform:translateX(-50px);
 }
 
 #hero h2 {
   color: #ffffff;
   margin: 10px 0 0 0;
   font-size: 22px;
-  transform:translateX(-50px);
 }
 
 #hero .btn-about {
@@ -566,7 +561,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   color: #fff;
   background: #FDC844;
-  transform:translateX(-50px);
 }
 
 #hero .btn-about:hover {
@@ -579,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {  
   #hero:before {
     content: "";
     background: rgba(0, 0, 0, 0.363);
@@ -1389,9 +1383,29 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.info i{
+  font-size: 30px;
+}
+
+.contact-info i{
+  font-size: 30px;
+  background: rgba(102, 102, 102, 0.664);
+  border-radius: 10px;
+  padding:10px 20px;
+  margin-bottom: 30px;
+  color: #FDC844;
+}
+
 .contact .info {
   width: 100%;
   background: #fff;
+}
+
+.contact-social-links a{
+  font-size: 34px;
+  background: rgba(102, 102, 102, 0.664);
+  border-radius: 10px;
+  padding:10px 20px;
 }
 
 .contact .info i {
@@ -1545,6 +1559,7 @@ section {
   color: #222222;
   font-size: 14px;
   text-align: center;
+  bottom: 0;
 }
 
 #footer .credits {
@@ -1554,4 +1569,9 @@ section {
 
 #footer .credits a {
   color: #FDC844;
+}
+
+.bottom-footer{
+  position: absolute;
+  width: 100%;
 }
