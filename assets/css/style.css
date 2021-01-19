@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0;
 }
 
+/* @media (max-width:748px){
+  .container{
+    padding-left:50px;
+  }
+} */
+
 #watermark .watermark-logo{
   width: 400px;
   position: absolute;
@@ -93,10 +99,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 200px;
   }
   #side-pic img{
-    transform: translateX(-25px);   
+    transform: translateX(-10px);   
   }
   #side-pic-home img{
-    transform: translateX(-25px);
+    transform: translateX(-10px);
     height: 100vh;    
   }
 
@@ -352,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  line-height: 1;
+  line-height: 1px;
   cursor: pointer;
   text-align: right;
 }
@@ -453,6 +459,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .header-social-links {
   padding-left: 15px;
+  top: 17px;
 }
 
 .header-social-links a {
@@ -461,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   line-height: 1px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .header-social-links a:hover {
@@ -1574,4 +1581,5 @@ section {
 .bottom-footer{
   position: absolute;
   width: 100%;
+  bottom: 0;
 }
