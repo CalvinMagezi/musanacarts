@@ -5,8 +5,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #0a0a0a;
-  background-color: rgba(71, 71, 71, 0.596);
+  color: #FDC844;
+  background-color: rgb(40, 55, 71);
 }
 
 a {
@@ -578,7 +578,7 @@ p{
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
+  color: #000 !important;
   background: #FDC844;
 }
 
@@ -593,11 +593,11 @@ p{
   border-radius: 50px;
   transition: 0.5s;
   margin-top: 30px;
-  color: #fff;
+  color: #000;
   background: #FDC844;
 }
 
-#hero .btn-about:hover {
+#WriteUp .btn-about:hover {
   background: #fdc9447c;
 }
 
@@ -1449,7 +1449,7 @@ section {
   margin: auto;
   font-size: 50px;
   color: transparent;
-  background: linear-gradient(45deg, #a58fe9, #e37682);
+  background: linear-gradient(45deg, #ffffff, #1b1b1b);
   background-clip: text;
   -webkit-background-clip: text;
 }
