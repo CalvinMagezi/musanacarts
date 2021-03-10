@@ -1,9 +1,3 @@
-/**
-* Template Name: Kelly - v2.0.0
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
@@ -15,6 +9,21 @@
       });
     }
   });
+
+  //Gallery Switching Buttons
+  $('#change-bw').click(function(){
+    $('#blankets').css('opacity','1')
+    $('#blankets').show()
+    $('#rtf').hide()
+    $('#rf').css('opacity', '0')
+  })
+
+  $('#change-rf').click(function(){
+    $('#blankets').css('opacity','0')
+    $('#blankets').hide()
+    $('#rtf').show()
+    $('#rf').css('opacity', '1')
+  })
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {

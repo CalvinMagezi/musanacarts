@@ -121,6 +121,43 @@ p {
     visibility: hidden;
   }
 }
+/*--------------------------------------------------------------
+# Background Video
+--------------------------------------------------------------*/
+/* #mainContainer {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#topVideo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#mainContainer:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.74);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 786px) {
+  #topVideo {
+    left: -110%;
+  }
+} */
 
 /*--------------------------------------------------------------
 # Preloader
@@ -174,8 +211,8 @@ p {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 15px;
-  bottom: 15px;
+  right: 30px;
+  bottom: 125px;
   z-index: 99999;
 }
 
@@ -1428,6 +1465,30 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+#blankets {
+  position: absolute;
+  opacity: 1;
+  transition: 1s ease;
+  right: 0;
+  left: 0;
+}
+
+.jumbotron {
+  background: none;
+}
+
+.jumbotron img {
+  width: 300px;
+  height: 300px;
+}
+
+#rf {
+  position: absolute;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
 
 #gallery h1 {
   color: #fdc844;
@@ -1450,10 +1511,6 @@ section {
   left: 0;
   z-index: 1;
   font-weight: 900;
-}
-
-.gallery-container {
-  background-color: #111;
 }
 
 .gallery-block {
